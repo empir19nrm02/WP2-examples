@@ -52,7 +52,8 @@ U_Ph = resultdraw[:][0]
 U_ref= resultdraw[:][1]
 
 """
-For this example the correction factor is neglected(i.e. set to 1 without uncertainty) to keep the example short.
+For this example the correction factor in the equation of s_v in the Good Practice Guide (GDP) is neglected 
+(i.e. set to 1 without uncertainty) to keep the example short.
 """
 
 """
