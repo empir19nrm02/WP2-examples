@@ -20,8 +20,8 @@ Measurement Uncertainty Calculation for Calibration of spectral irradiance respo
 Calculation is done for a device under test (detector to be calibrated) referencing to one reference detector.
 The calculation of the photometric responsivity is done per default.
 
-The input data as TDMS is readable as variable dictionary once imported to Python.
-A Excel converted version is available, but not fit for calculation.
+The input data as Excel is readable as variable dictionary once imported to Python.
+The Excel Calculation is identical but for the import in line 94 and 98 and for type changes in lines 228 and 240.
 
 Important explanation steps are marked with:
 !!!!!!!!!!
