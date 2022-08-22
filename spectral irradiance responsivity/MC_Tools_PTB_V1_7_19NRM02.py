@@ -121,7 +121,7 @@ def drawFromArray(List, Draws):
     mean = np.mean(List)
     std = np.std(List)
     dof = len(List)
-    txi = drawValues(Mean=mean, Stdev=std, size=Draws, DoF=dof, Type="T")
+    txi = drawValues(Mean=mean, Stddev=std, Draws=Draws, DoF=dof-1, Type="T")
     return(txi)
 
 
