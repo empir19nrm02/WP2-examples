@@ -68,10 +68,10 @@ print('Start =', now.strftime("%H:%M:%S"))
 List of variables to be set before calculation is started
 """
 draws = 5000  # Number of total runs of the MC calculation. 5000 usually is enough for stable results
-path = 'P:/Learning_Python/'  # Path of the source file in TDMS format
+path = './'  # Path of the source file in TDMS format
 referenz = 'ENV03B'  # Identifier of the reference detector (the name representation in the source file)
 DUT = 'FD18'   # Identifier of the DUT detector (the name representation in the source file)
-referenzpfad = 'O:/4-1/4-11/TULIP/Auswertungen/Python Radiometer Auswertung/'   # Path of the reference Excel-Files for amplifiers, detectors and the Vlambda function
+referenzpfad = 'reference data/'   # Path of the reference Excel-Files for amplifiers, detectors and the Vlambda function
 tdmsdatei = '19NRM02-exemplary TULIP data.tdms'  # Name of the TDMS file
 
 unc_dist=0.001  # absolute uncertainty of the reference plane of the DUT in m
@@ -92,7 +92,7 @@ savename = 'sE_'+DUT + '_' + tdmsname + ' ' + zeitstempel #Constructing the file
 
 # importing the TDMS data file have the complete measurement data stored
 dataimport = mc.read_tdms(path + tdmsdatei, verbose=1)
-adfsdfa
+
 # Chooses the measurement data section from TDMS file
 # More sections consist of configuration data and metadata
 measdata = dataimport["meas data1"]
